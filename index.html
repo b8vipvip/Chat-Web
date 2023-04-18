@@ -15,13 +15,17 @@
 		<style>
 			.loading-wrap {
 				display: flex;
+				flex-direction: column;  /* 设置主轴方向为垂直方向 */
 				justify-content: center;
 				align-items: center;
 				height: 100vh;
+				text-align: center; /* 将文本设置为居中对齐 */
+				color:red;
 			}
 
 			.balls {
 				width: 4em;
+				margin: 2vh;
 				display: flex;
 				flex-flow: row nowrap;
 				align-items: center;
@@ -70,6 +74,9 @@
 			}
 		</style>
 		<div class="loading-wrap">
+			<div class="jiazai">
+				<p>首次打开可能需要加载1-5分钟，</br>请耐心等待......</p>
+			</div>
 			<div class="balls">
 				<div></div>
 				<div></div>
